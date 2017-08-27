@@ -1,0 +1,93 @@
+headers{
+	flex:1;
+}
+headers .ant-affix{
+	background-color: #fff;
+
+}
+
+.logo{
+	height: 100px;
+	align-items:center;
+	display: flex;
+}
+.logo img{
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+}
+
+.logo span{
+	font-size: 24px;
+	padding-left: 5px;
+}
+headers ul.nav{
+	display: flex;
+    justify-content: space-between;
+}
+headers ul.nav li.ant-menu-item{
+	padding-top: 25px;
+	font-size: 16px;
+
+}
+headers .ant-menu-horizontal{
+	border-bottom: none;
+}
+footers{
+	text-align: center;
+}
+
+headers .ant-menu-horizontal > .ant-menu-item >  a.personal{
+	display: inline-block;
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 800px;
+  line-height: 800px;
+  /*background: #364d79;*/
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+.character{
+	padding-top:30px;
+}
+.character h2{
+	text-align: center;
+	font-size: 36px;
+	line-height: 140px;
+	font-weight: bold;
+}
+.character ul {
+	display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+    line-height: 48px;
+}
+.character ul li:hover div{
+	-webkit-box-shadow:3px 3px 5px #292929;
+       -moz-box-shadow:3px 3px 5px #292929;
+            box-shadow:3px 3px 5px #292929;
+
+}
+.character ul li:hover{
+	transform: scale(1.5);
+	/*font-size: 22px;*/
+	color: #000;
+}
+.character ul li div{
+
+	width: 120px;
+	height: 120px;
+	border-radius: 100px;
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
