@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import {Row, Col, Menu, Icon,Tabs,message,Form,Input,Button,CheckBox,Modal,Affix} from 'antd';
-import {Router, Route, Link, browserHistory} from 'react-router';
-// import { Link } from 'react-router-dom';
+import {Router, Route,Link, browserHistory} from 'react-router';
 const FormItem = Form.Item;
 const TabPane = Tabs.TabPane;
 const SubMenu = Menu.SubMenu;
@@ -112,7 +111,7 @@ class PCHeader extends React.Component {
 
 			:
 			<Menu.Item key="register" className="register">
-				<Icon type="star-o"/>注册/登陆
+				<Icon type="user"/>注册/登陆
 			</Menu.Item>
 		return (
 			<headers>
@@ -127,26 +126,23 @@ class PCHeader extends React.Component {
 					</Col>
 					<Col span={14}>
 						<Menu className="nav" mode = "horizontal" onClick={this.handleClick.bind(this)} selectedKeys = {[this.state.current]}>
-							<Menu.Item key="top">
-								<Link to="/home"> <Icon type="home-o"/>首页 </Link>
+							<Menu.Item key="home">
+								<Link to="/" ><Icon type="home"/>首页 </Link>
 							</Menu.Item>
-							<Menu.Item key="a">
-								<Link to="/store"> <Icon type="home-o"/>首页 </Link>
-								
+
+							<Menu.Item key="store">
+								<Link to="/store" ><Icon type="shop"/>商城 </Link>	
 							</Menu.Item>
-							// <Menu.Item key="b">
-							// 	<Link to="/home"> <Icon type="home-o"/>首页 </Link>
-								
-							// </Menu.Item>
-							// <Menu.Item key="c">
-							// 	<Link to="/home"> <Icon type="home-o"/>首页 </Link>
-								
-							// </Menu.Item>
-		
-							// <Menu.Item key="e">
-							// 	<Link to="/home"> <Icon type="home-o"/>首页 </Link>
-								
-							// </Menu.Item>							
+
+							<Menu.Item key="video">
+								<Link to="/video" ><Icon type="video-camera"/>视频 </Link>	
+							</Menu.Item>
+
+							<Menu.Item key="character">
+								<Link to="/character" ><Icon type="video-camera"/>视频 </Link>	
+							</Menu.Item>
+
+													
 						</Menu>
 						<Modal title="用户中心" wrapClassName="vertical-center-modal" visible={this.state.modalVisable} onCancel = {() => this.setModalVisible(false)} onOk={() => this.setModalVisible(false)}  okText="关闭">
 							<Tabs type = "card" onChange={this.callback.bind(this)}>

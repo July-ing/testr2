@@ -1,24 +1,13 @@
 import React from 'react';
-import PCHeader from './pcHeader'
-import Footer from './Footer'
-import PCBanner from './pcBanner'
-import PCCharacter from './PCCharacter'
-
-import { BackTop } from 'antd';
+import PCApp from './pcApp';
+import { render } from 'react-dom';
+import { hashHistory } from 'react-router'; 
+import RouteMap from './routeMap';
 
 export default class PCIndex extends React.Component {
 	render(){
 		return (
-			<div>
-				<PCHeader></PCHeader>
-				<PCBanner></PCBanner>
-				<PCCharacter></PCCharacter>
-				
-				<BackTop />
-				<Footer></Footer>
-
-			</div>
-
+			<RouteMap history={hashHistory} />
 		);
 	};
 }

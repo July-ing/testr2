@@ -8,13 +8,10 @@ export default class PCApp extends React.Component {
 		return (
 			<div>
 				<PCHeader></PCHeader>
-				<div>{this.props.children}</div>
-				
+				{this.props.children}
 				<BackTop />
 				<Footer></Footer>
-
 			</div>
-
 		);
 	};
 }
